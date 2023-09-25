@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "test cli with nodejs",
   "type": "module",
-  "main": "src/index.js",
+  "main": "dist/cli.js",
   "bin": {
     "atom-cli-test": "bin/index.js",
     "create-atom-project": "bin/index.js"
