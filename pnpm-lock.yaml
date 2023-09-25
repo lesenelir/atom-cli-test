@@ -3,3 +3,8 @@ lockfileVersion: '6.0'
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
+
+dependencies:
+  bin:
+    specifier: link:/Users/lesenelir/Desktop/atom-cli-test/bin
+    version: link:bin
