@@ -1,0 +1,19 @@
+{
+  "name": "atom-cli-test",
+  "version": "0.0.1",
+  "description": "test cli with nodejs",
+  "main": "src/index.js",
+  "bin": {
+    "atom-cli-test": "bin/index.js",
+    "create-atom-project": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "create-atom-project"
+  ],
+  "author": "lesenelir <hi@lesenelir.me>",
+  "license": "ISC"
+}
