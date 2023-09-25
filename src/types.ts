@@ -11,3 +11,8 @@ export type RawOptions = {
   skipPrompts: boolean,
   template?: string,
 }
+
+
+export type Options = Omit<RawOptions, 'skipPrompts'> & { // delete skipPrompts property
+  template: string
+}

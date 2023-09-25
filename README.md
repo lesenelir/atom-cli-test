@@ -32,3 +32,8 @@ npx atom-cli-test
 - `-w` or `--watch` - watch files in bundle and rebuild on changes
 
 
+### Library
+- arg: parse command line parameters
+
+- inquirer: 
+
