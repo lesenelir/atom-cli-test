@@ -35,5 +35,5 @@ npx atom-cli-test
 ### Library
 - arg: parse command line parameters
 
-- inquirer: 
+- inquirer: create an interactive command line interface
 
