@@ -16,3 +16,8 @@ export type RawOptions = {
 export type Options = Omit<RawOptions, 'skipPrompts'> & { // delete skipPrompts property
   template: string
 }
+
+export const templates = ['javascript', 'typescript'] as const
+
+export type Template = typeof templates[number]
+
