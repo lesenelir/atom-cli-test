@@ -1,8 +1,14 @@
 # atom-cli-test
 
-> A CLI for Atom Test
+> A Cli for Atom Test
 
 Thanks for [How to Create Your Own CLI with Node.js](https://javascript.plainenglish.io/how-to-create-your-own-cli-with-node-js-9004091a64d5) article.
+
+
+### two steps
+- Creating a cli npm package.
+
+- Packaging, setting up template projects.
 
 
 ### some command line:
@@ -33,7 +39,18 @@ npx atom-cli-test
 
 
 ### Libraries
-- arg: parse command line parameters
+- arg: parse command line parameters.
 
-- inquirer: create an interactive command line interface
+- inquirer: create an interactive command line interface.
+
+- execa: is used to run commands.
+
+- chalk: is a terminal string styling tool.
+
+- listr: is a terminal task list.
+
+- ncp: is a tool for asynchronous and recursive copying.
+
+- pkg-install: provides a platform-independent package installer.
+
 

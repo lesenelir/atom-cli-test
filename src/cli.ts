@@ -1,3 +1,4 @@
+import {createProject} from './main'
 import {parseArgumentsIntoOptions} from "./utils/parse-arguments-into-options"
 import {promptForMissingOptions} from "./utils/prompt-for-missing-options"
 
@@ -8,5 +9,6 @@ export async function cli(args: Args) {
 
   const options: Options = await promptForMissingOptions(rawOptions) // raw object -> object options
 
-  console.log(options)
+  // console.log(options)
+  await createProject(options)
 }
