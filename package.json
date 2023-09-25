@@ -4,8 +4,8 @@
   "description": "test cli with nodejs",
   "main": "src/index.js",
   "bin": {
-    "atom-cli-test": "bin/index.js",
-    "create-atom-project": "bin/index.js"
+    "atom-cli-test": "./bin/index.js",
+    "create-atom-project": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
