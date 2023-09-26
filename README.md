@@ -18,6 +18,14 @@ npm link
 ```
 
 ```
+npm ls -g
+```
+
+```
+npm unlink <name> -g
+```
+
+```
 npx rollup -c rollup.config.js
 ```
 
