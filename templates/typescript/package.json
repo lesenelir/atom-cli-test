@@ -1,11 +1,25 @@
 {
   "name": "atom-cli-test-typescript-template",
-  "version": "0.0.1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "description": "atom-cli-test package ts template",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "lesenelir <hi@lesenelir.me>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
