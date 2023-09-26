@@ -6,11 +6,13 @@ import {fileURLToPath} from 'url'
 import {copyTemplateFiles} from './utils/copy-template-files'
 import {initGitRepo} from './utils/init-git-repo'
 import {installPackages} from './utils/install-packages'
+import {createProjectDirectory} from "./utils/create-project-directory"
 
 import type {Options} from "./types"
 
 export async function createProject(options: Options) {
-  const targetDirectory = process.cwd()
+  // const targetDirectory = process.cwd()
+  const targetDirectory = path.resolve(process.cwd(), options.project)
   const currentFileUrl = import.meta.url
   const templateDirectory = path.resolve(
     decodeURI(fileURLToPath(currentFileUrl)),
@@ -19,6 +21,10 @@ export async function createProject(options: Options) {
   )
 
   const tasks = new Listr([
+    {
+      title: 'create project directory',
+      task: () => createProjectDirectory(options.project, process.cwd())
+    },
     {
       title: 'copy project files',
       task: () => copyTemplateFiles(templateDirectory, targetDirectory)

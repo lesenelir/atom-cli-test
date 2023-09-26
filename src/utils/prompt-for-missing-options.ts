@@ -3,14 +3,14 @@ import inquirer from 'inquirer'
 import type {Options, RawOptions} from '../types'
 
 // default values for unspecified args === default parameter object
-const defaultOptions: Options = {
+const defaultOptions: Omit<Options, 'project'> = {
   git: false,
   install: true,
   template: 'javascript'
 }
 
 // --yes flag is passed
-const skipOptions: Omit<Options, 'template'> = { // delete template property
+const skipOptions: Omit<Options, 'template' | 'project'> = { // delete template property
   git: true,
   install: true
 }
@@ -23,6 +23,15 @@ export async function promptForMissingOptions(options: RawOptions): Promise<Opti
 
   // questions array
   const questions = []
+
+  if (!options.project) {
+    questions.push({
+      type: 'input',
+      name: 'project',
+      message: 'Please type project\'s name (e.g. my-project)',
+      validate: (value: string) => value.length > 0
+    })
+  }
 
   if (!options.template) {
     questions.push({
@@ -60,6 +69,7 @@ export async function promptForMissingOptions(options: RawOptions): Promise<Opti
   return {
     git: options.git || answers.git,
     install: options.install || answers.install,
+    project: options.project || answers.project,
     template: options.template || answers.template
   }
 }

@@ -8,6 +8,7 @@ export type Args = string[]
 export type RawOptions = {
   git: boolean,
   install: boolean,
+  project: string,
   skipPrompts: boolean,
   template?: string,
 }
