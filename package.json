@@ -17,6 +17,10 @@
     "create-atom-project",
     "atom-cli-test"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lesenelir/atom-cli-test"
+  },
   "author": "lesenelir <hi@lesenelir.me>",
   "license": "ISC",
   "devDependencies": {
