@@ -1,6 +1,6 @@
 {
   "name": "atom-cli-test",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "test cli with nodejs",
   "type": "module",
   "main": "dist/cli.js",
@@ -8,6 +8,12 @@
     "atom-cli-test": "bin/index.js",
     "create-atom-project": "bin/index.js"
   },
+  "files": [
+    "dist",
+    "bin",
+    "templates/**/*",
+    "!templates/**/node_modules"
+  ],
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "dev": "rollup -c rollup.config.js -w"
