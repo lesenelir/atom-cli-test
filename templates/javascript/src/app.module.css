@@ -1,0 +1,39 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 1rem;
+}
+
+.state {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+
+.btn {
+  background-color: #add8e6;
+  color: #000;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #92b6d5;
+}
+
+.words {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.author {
+  font-weight: 600;
+}
