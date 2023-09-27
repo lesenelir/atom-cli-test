@@ -29,6 +29,10 @@ npm ls -g
 ```
 
 ```
+npm link <name> (atom-cli-test)   in application project
+```
+
+```
 npm unlink <name> -g
 ```
 
