@@ -11,6 +11,13 @@ Thanks for [How to Create Your Own CLI with Node.js](https://javascript.plaineng
 - Packaging, setting up template projects.
 
 
+### how to use
+
+```
+npx atom-cli-test
+```
+
+
 ### some command line:
 
 ```
